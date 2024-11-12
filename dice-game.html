@@ -1,0 +1,77 @@
+<!--Name: Martin Alonso Diaz Carvallo -->
+<!--Version 1.8-->
+<!--Date: 11 Nov 2024-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dice Game - Proyect COMP2132</title>
+    <script src="js/jquery3.7.js" defer></script> 
+    <script src="js/script-dice.js" defer></script> 
+</head>
+<body>
+
+  <header>
+    <h1>Dice Game: Player vs Computer</h1>
+    <div id="instruction">How to Play
+      <div id="instruction-text">
+        <h3>Dice Game Instructions</h3>
+        <p>Roll two dice and compete against the computer for 3 rounds.</p>
+        <ul>
+          <li>If you roll a 1, your score for that round is 0.</li>
+          <li>Rolling a pair doubles your score for that round.</li>
+          <li>Otherwise, your score is the sum of the dice.</li>
+        </ul>
+        <p>After 3 rounds, the player with the highest total score wins!</p>
+        <p>Click <strong>Roll Dice</strong> to play and <strong>Reset</strong> to start over.</p>
+    </div>
+  </div>
+  </header>
+
+  <div id="dice-game-container"> 
+    <div id="dice-display">
+      <div class="player">
+        <h2>Player</h2>
+        <div class="dice-images">
+          <img class="dice-roll" id="player-dice1" src="images/dice/dice-01.png">
+          <img class="dice-roll" id="player-dice2" src="images/dice/dice-01.png">
+        </div>
+        <p>Round Score: <span id="player-round-score">0</span></p>
+      </div>
+      <div class="computer">
+        <h2>Computer</h2>
+        <div class="dice-images">
+          <img class="dice-roll" id="computer-dice1" src="images/dice/dice-01.png">
+          <img class="dice-roll" id="computer-dice2" src="images/dice/dice-01.png">
+        </div>
+        <p>Round Score: <span id="computer-round-score">0</span></p>
+      </div>
+    </div>
+    <div id="total-scores">
+      <p><span id="count-rounds">1º</span> Round</p>
+      <p>Player Total: <span id="player-total">0</span></p>
+      <p>Computer Total: <span id="computer-total">0</span></p>
+    </div>
+    <button id="roll-button">Roll Dice</button>
+    <button class="reset-button" id="reset01">Reset Game</button>
+    <div id="box-back-botton">
+      <button class="back-botton" id="back01">Previos Page</button>
+    </div>
+    <div id="result-message">
+      <div id="result-message-text">
+        <h3>Results:</h3>
+      </div>
+      <button class="back-botton">Go Back</button>
+      <button class="reset-button">Play Again</button>
+    </div>
+  </div>
+
+<footer>
+    <p>Web designed by Martin Diaz (mdiaz30@my.bcit.ca)</p>
+</footer>
+</body>
+</html>
